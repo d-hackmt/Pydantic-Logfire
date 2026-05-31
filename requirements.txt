@@ -1,0 +1,20 @@
+# langchain ecosystem setup
+
+langchain
+langchain-text-splitters
+langchain-community
+langchain-openai
+langchain-groq
+langchain-google-genai
+
+logi
+python-dotenv
+logfire[httpx]
+openai
+
+google-generativeai
+langgraph
+faiss-cpu  #vector db
+langchain-tavily  # websearch
+streamlit  # ui
+ipykernel   # jupyter notebook

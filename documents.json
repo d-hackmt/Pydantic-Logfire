@@ -1,0 +1,32 @@
+[
+  {
+    "topic": "RAG",
+    "source": "doc_1",
+    "content": "Retrieval-Augmented Generation (RAG) combines information retrieval with text generation. When a user asks a question, RAG first retrieves relevant documents from a knowledge base using vector similarity search, then passes those documents along with the question to an LLM. This grounds the answer in actual content, which significantly reduces hallucinations compared to pure LLM generation."
+  },
+  {
+    "topic": "Guardrails",
+    "source": "doc_2",
+    "content": "LLM Guardrails are safety controls that sit between the user and the language model. They run before the LLM sees the input (input rails) and after the LLM generates output (output rails). NVIDIA NeMo Guardrails uses a domain-specific language called Colang to define rules declaratively. Common guardrails include prompt injection detection, PII filtering, toxicity filtering, and topic restriction."
+  },
+  {
+    "topic": "Gateway",
+    "source": "doc_3",
+    "content": "An LLM Gateway is a proxy layer that sits between your application and LLM providers. It provides automatic fallbacks (if one provider fails, route to another), request caching (avoid paying for the same query twice), load balancing across API keys, retry logic with exponential backoff, and centralized observability and cost tracking. Portkey and LiteLLM are popular open-source LLM gateway implementations."
+  },
+  {
+    "topic": "Observability",
+    "source": "doc_4",
+    "content": "LLM Observability is the ability to monitor, trace, and debug language model applications in production. It includes tracking token usage and costs per call, measuring latency across pipeline stages, logging full prompts and responses, and correlating traces to specific users or sessions. Tools like Langfuse, Arize Phoenix, and Pydantic Logfire provide LLM-native observability with structured traces."
+  },
+  {
+    "topic": "Evals",
+    "source": "doc_5",
+    "content": "LLM Evaluation (Evals) is the process of systematically measuring the quality of an LLM application. Key metrics include faithfulness (does the answer match retrieved context?), answer relevancy, context recall, and hallucination rate. Frameworks like DeepEval, Ragas, and LangSmith allow teams to run automated evals, use LLM-as-judge scoring, and integrate evaluations into CI/CD pipelines."
+  },
+  {
+    "topic": "Fine-tuning",
+    "source": "doc_6",
+    "content": "Fine-tuning trains a pre-trained LLM further on a domain-specific dataset, baking knowledge into the model weights. Unlike RAG, fine-tuned knowledge cannot be updated without retraining. Fine-tuning is better for teaching a model new behaviors, styles, or formats. RAG is better for keeping information current and providing source citations. In practice, RAG and fine-tuning are often combined in production systems."
+  }
+]
